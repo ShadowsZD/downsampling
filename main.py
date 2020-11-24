@@ -141,10 +141,10 @@ def run():
             remainder_y += blk_decimal
             new_img[x,y] = reduce(x, y, blk_size, pixel_skip_x, pixel_skip_y, input_image, func)
 
-    cv2.imshow('img', new_img)
+    #cv2.imshow('img', new_img)
     cv2.imwrite(f'output_{func}_{reduction}.png', new_img)
-    cv2.waitKey()
-    cv2.destroyAllWindows()
+    #cv2.waitKey()
+    #cv2.destroyAllWindows()
 
 if __name__ == "__main__":
     run()
