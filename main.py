@@ -90,9 +90,9 @@ def run():
 
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('img', type=str)
-    parser.add_argument('mode', type=str)
-    parser.add_argument('reduction', type=float)
+    parser.add_argument('img', type=str, help='image name and type (img.type)')
+    parser.add_argument('mode', type=str, help='mode for downsampling (mean, median or mode)')
+    parser.add_argument('reduction', type=float, help='reduction factor in float (0.5 for 50 per cent reduction)')
 
     args = parser.parse_args()
 
