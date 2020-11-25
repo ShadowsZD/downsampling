@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 from scipy import stats
-import math
 import argparse
 
 def reduce(x, y, blk_size, pixel_skip_x, pixel_skip_y, img, func):
